@@ -1,0 +1,43 @@
+|RM
+clk => rmaux[0].CLK
+clk => rmaux[1].CLK
+clk => rmaux[2].CLK
+clk => rmaux[3].CLK
+clk => rmaux[4].CLK
+clk => rmaux[5].CLK
+clk => rmaux[6].CLK
+clk => rmaux[7].CLK
+rst => rmaux[0].ACLR
+rst => rmaux[1].ACLR
+rst => rmaux[2].ACLR
+rst => rmaux[3].ACLR
+rst => rmaux[4].ACLR
+rst => rmaux[5].ACLR
+rst => rmaux[6].ACLR
+rst => rmaux[7].ACLR
+cargaREM => rmaux[7].ENA
+cargaREM => rmaux[6].ENA
+cargaREM => rmaux[5].ENA
+cargaREM => rmaux[4].ENA
+cargaREM => rmaux[3].ENA
+cargaREM => rmaux[2].ENA
+cargaREM => rmaux[1].ENA
+cargaREM => rmaux[0].ENA
+rm_in[0] => rmaux[0].DATAIN
+rm_in[1] => rmaux[1].DATAIN
+rm_in[2] => rmaux[2].DATAIN
+rm_in[3] => rmaux[3].DATAIN
+rm_in[4] => rmaux[4].DATAIN
+rm_in[5] => rmaux[5].DATAIN
+rm_in[6] => rmaux[6].DATAIN
+rm_in[7] => rmaux[7].DATAIN
+rm_out[0] <= rmaux[0].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[1] <= rmaux[1].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[2] <= rmaux[2].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[3] <= rmaux[3].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[4] <= rmaux[4].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[5] <= rmaux[5].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[6] <= rmaux[6].DB_MAX_OUTPUT_PORT_TYPE
+rm_out[7] <= rmaux[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

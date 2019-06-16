@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity PC is
+	port(clk,rst,incPC,cargaPC: in std_logic;
+			pc_in: in std_logic_vector(7 downto 0);
+			pc_out: out std_logic_vector(7 downto 0));
+end PC;
+
+architecture comportamento of RM is
+signal pcaux: std_logic_vector(7 downto 0) := "00000000";
+begin
+	process(clk,rst)
+	begin
+		if rst = '1' then
+			rmaux <= "00000000";
+		elsif (clk'event and clk = '1') then
+			if (cargaREM = '1') then
+				rmaux <= rm_in;
+			end if;
+		end if;
+	rm_out <= rmaux;
+	end process;
+end comportamento;
